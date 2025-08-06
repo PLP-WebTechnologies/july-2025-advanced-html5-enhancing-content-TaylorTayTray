@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+    legend {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Taylor's Enhanced HTML5 Page</h1>
+    <p>This page showcases advanced HTML5 content and form elements.</p>
+  </header>
+
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>Famous Songs by Taylor (Lists)</h2>
+    <ol>
+      <li>Love Story</li>
+      <li>Shake It Off</li>
+      <li>Blank Space</li>
+    </ol>
+
+    <ul>
+      <li>Pop</li>
+      <li>Country</li>
+      <li>Indie Folk</li>
+    </ul>
+
+    <dl>
+      <dt>Album</dt>
+      <dd>A collection of songs by an artist.</dd>
+      <dt>Single</dt>
+      <dd>A stand-alone song released for promotion.</dd>
+    </dl>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section>
+    <h2>Taylor's Album Sales (Table)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Album</th>
+          <th>Year</th>
+          <th>Sales (Millions)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1989</td>
+          <td>2014</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Red</td>
+          <td>2012</td>
+          <td>7</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section>
+    <h2>Media: Taylor's Works</h2>
+    
+    <h3>Image</h3>
+    <img src="taylor-photo.jpg" alt="Taylor Swift Photo" width="400">
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="taylor-song.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <video width="500" height="300" controls>
+      <source src="taylor-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Section 4: HTML5 Form -->
+  <section>
+    <h2>Contact Taylor Fan Club (Form)</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required placeholder="John Doe"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="10" max="120"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="fav-song">Favorite Song:</label><br>
+        <input type="text" id="fav-song" name="fav-song" readonly value="Love Story"><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label>Newsletter:</label><br>
+        <input type="radio" id="yes" name="newsletter" value="yes" checked>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="newsletter" value="no">
+        <label for="no">No</label><br><br>
+
+        <label for="genre">Favorite Genre:</label><br>
+        <select id="genre" name="genre">
+          <option value="pop">Pop</option>
+          <option value="country">Country</option>
+          <option value="indie">Indie</option>
+        </select><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Type your message here..."></textarea><br><br>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Taylor Fan Page</p>
+  </footer>
+
+</body>
+</html>
