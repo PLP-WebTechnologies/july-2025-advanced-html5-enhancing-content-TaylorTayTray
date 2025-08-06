@@ -1,160 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Enhanced HTML5 Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-    th, td {
-      border: 1px solid #999;
-      padding: 10px;
-      text-align: left;
-    }
-    fieldset {
-      border: 1px solid #ccc;
-      padding: 15px;
-    }
-    legend {
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Enhanced HTML5 Content</title>
 </head>
 <body>
+  <h1>Enhanced HTML Elements</h1>
 
-  <header>
-    <h1>Welcome to Taylor's Enhanced HTML5 Page</h1>
-    <p>This page showcases advanced HTML5 content and form elements.</p>
-  </header>
+  <!-- Definition List -->
+  <h2>Definition List</h2>
+  <dl>
+    <dt>USA</dt>
+    <dd>United States of America.</dd>
+    <dt>UAE</dt>
+    <dd>United Arab Emirates.</dd>
+  </dl>
 
-  <!-- Section 1: Lists -->
-  <section>
-    <h2>Famous Songs by Taylor (Lists)</h2>
-    <ol>
-      <li>Love Story</li>
-      <li>Shake It Off</li>
-      <li>Blank Space</li>
-    </ol>
+  <!-- Nested Lists -->
+  <h2>Nested Lists</h2>
+  <ol>
+    <li>Cars
+      <ol type="i">
+        <li>Toyota
+          <ol type="a">
+            <li>Corolla</li>
+            <li>Camry</li>
+            <li>Prius</li>
+          </ol>
+        </li>
+        <li>Mazda</li>
+        <li>Nissan</li>
+      </ol>
+    </li>
+    <li>Motorbikes
+      <ul>
+        <li>Honda</li>
+        <li>Yamaha</li>
+        <li>Kawasaki</li>
+      </ul>
+    </li>
+  </ol>
 
-    <ul>
-      <li>Pop</li>
-      <li>Country</li>
-      <li>Indie Folk</li>
-    </ul>
+  <!-- Multimedia -->
+  <h2>Multimedia</h2>
 
-    <dl>
-      <dt>Album</dt>
-      <dd>A collection of songs by an artist.</dd>
-      <dt>Single</dt>
-      <dd>A stand-alone song released for promotion.</dd>
-    </dl>
-  </section>
+  <h3>Image</h3>
+  <img src="taylor-photo.jpg" alt="Personal photo" width="500" height="350">
 
-  <!-- Section 2: Table -->
-  <section>
-    <h2>Taylor's Album Sales (Table)</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Album</th>
-          <th>Year</th>
-          <th>Sales (Millions)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1989</td>
-          <td>2014</td>
-          <td>10</td>
-        </tr>
-        <tr>
-          <td>Red</td>
-          <td>2012</td>
-          <td>7</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <h3>Audio</h3>
+  <audio controls>
+    <source src="taylor-song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
-  <!-- Section 3: Media -->
-  <section>
-    <h2>Media: Taylor's Works</h2>
-    
-    <h3>Image</h3>
-    <img src="taylor-photo.jpg" alt="Taylor Swift Photo" width="400">
+  <h3>Video</h3>
+  <video width="640" height="360" controls>
+    <source src="taylor-video.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
 
-    <h3>Audio</h3>
-    <audio controls>
-      <source src="taylor-song.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+  <!-- Table -->
+  <h2>Tables</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jane Doe</td>
+        <td>Female</td>
+        <td>U.A.E</td>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>Male</td>
+        <td>Russia</td>
+      </tr>
+    </tbody>
+  </table>
 
-    <h3>Video</h3>
-    <video width="500" height="300" controls>
-      <source src="taylor-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
+  <!-- Form -->
+  <h2>HTML5 Form</h2>
+  <form action="https://example.com/submit" method="post" autocomplete="on">
+    <fieldset>
+      <legend>Personal Information</legend>
 
-  <!-- Section 4: HTML5 Form -->
-  <section>
-    <h2>Contact Taylor Fan Club (Form)</h2>
-    <form action="#" method="post" autocomplete="on">
-      <fieldset>
-        <legend>Personal Info</legend>
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname" required placeholder="John Doe"><br><br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name" minlength="3">
+      <br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required placeholder="example@mail.com"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email">
+      <br><br>
 
-        <label for="age">Age:</label><br>
-        <input type="number" id="age" name="age" min="10" max="120"><br><br>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" value="TayTay" readonly>
+      <br><br>
 
-        <label for="dob">Date of Birth:</label><br>
-        <input type="date" id="dob" name="dob"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="At least 6 characters" pattern=".{6,}">
+      <br><br>
 
-        <label for="fav-song">Favorite Song:</label><br>
-        <input type="text" id="fav-song" name="fav-song" readonly value="Love Story"><br><br>
-      </fieldset>
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" required>
+      <label for="female">Female</label>
+      <br><br>
 
-      <fieldset>
-        <legend>Preferences</legend>
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select--</option>
+        <option value="usa">USA</option>
+        <option value="uae">UAE</option>
+        <option value="russia">Russia</option>
+      </select>
+      <br><br>
 
-        <label>Newsletter:</label><br>
-        <input type="radio" id="yes" name="newsletter" value="yes" checked>
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="newsletter" value="no">
-        <label for="no">No</label><br><br>
-
-        <label for="genre">Favorite Genre:</label><br>
-        <select id="genre" name="genre">
-          <option value="pop">Pop</option>
-          <option value="country">Country</option>
-          <option value="indie">Indie</option>
-        </select><br><br>
-
-        <label for="comments">Comments:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Type your message here..."></textarea><br><br>
-      </fieldset>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your thoughts..."></textarea>
+      <br><br>
 
       <input type="submit" value="Submit">
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Taylor Fan Page</p>
-  </footer>
-
+    </fieldset>
+  </form>
 </body>
 </html>
